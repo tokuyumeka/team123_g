@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "name": "yoridokoro",
+=======
   "name": "html3",
+>>>>>>> 0d3012942639b384b9e2d2fe4648c46c6b49eb97
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,18 +14,34 @@
     "type": "git",
     "url": "https://ecccomp.backlog.jp/git/2021_WD1A_HTML/2022_wd2a_html3.git"
   },
+<<<<<<< HEAD
+  "author": "hatsumi kusano",
+  "license": "ISC",
+  "browserslist": [
+    ">1.0% in JP",
+    "ie 11"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+=======
   "author": "yumeka toku[",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
+>>>>>>> 0d3012942639b384b9e2d2fe4648c46c6b49eb97
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
+<<<<<<< HEAD
+    "sass": "^1.50.1"
+=======
     "sass": "^1.51.0"
   },
   "dependencies": {
+>>>>>>> 0d3012942639b384b9e2d2fe4648c46c6b49eb97
   }
 }
