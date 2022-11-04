@@ -1,0 +1,18 @@
+@use "sass:color";
+//html3-3
+//text color
+$html3_03_text: #fff;
+
+//background color
+$html3_03_bgColor: #429EBD;
+
+//header/footer color
+$html3_03_hColor: color.scale($html3_03_bgColor,$lightness:-90%); //$html3_03_bgColorをベースにヘッダー背景色を設定
+$html3_03_fColor: color.scale($html3_03_bgColor,$lightness:-90%); //$html3_03_bgColorをベースにフッター背景色を設定
+
+
+//html3-4 カラーリングは任意でも可
+$html3_04_bgColor: #FFFFF0; //ページ背景色
+$html3_04_btnBg: #FFFFFF; //初期ボタン背景色
+$html3_04_btnBorder: #999999; //初期ボタン枠色
+$html3_04_btnRegistBg: #00a1b8; //btnRegistの背景色
