@@ -4,12 +4,19 @@ html(lang="ja")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="index.css")
+        link(rel="stylesheet", href="css/index.css")
         title いかまっち
     body 
-        header 
-            include _header
-        main 
-        footer 
-            include _footer
-        
+        #container
+            header 
+                include _header
+            main 
+                section.contents
+                    h2 最新の募集
+                    
+                section.contents
+                    h2 募集一覧
+
+            footer 
+                include _footer
+        script(src="js/index.js") 
