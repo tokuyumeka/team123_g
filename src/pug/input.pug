@@ -4,8 +4,8 @@ html(lang="ja")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="css/input.css")
         link(rel="stylesheet", href="css/ress.css")
+        link(rel="stylesheet", href="css/input.css")
 
         title input
     body 
@@ -15,12 +15,13 @@ html(lang="ja")
             section.input 
                 h2 募集をする
             section.form 
-                form    
-                    img(src="", alt="サムネイル選択")
-                    .form__content
+                form 
+                    .form__thum
+                        img(src="", alt="サムネイル選択")
+                    .form__item
                         label(for="title") タイトル
                         input(type="text" )
-                    .form__content
+                    .form__item
                         label(for="mode") 対戦モード
                         select(name="mode" class="mode__select") 
                             option(value="") 対戦モードを選択する
@@ -28,13 +29,13 @@ html(lang="ja")
                             option(value="area") ガチエリア
                             option(value="yagura") ガチヤグラ
                             option(value="hoko") ガチホコ
-                    .form__content 
+                    .form__item
                         label(for="time") 
                         input(type="text")
-                    .form__content 
+                    .form__item
                         label(for="xp") xp 
                         input(type="text")
-                    .form__content 
+                    .form__item
                         label(for="other") その他
                         input(type="textarea")  
                     button 募集を投稿する
