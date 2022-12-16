@@ -11,8 +11,39 @@
   <body> 
     <header> </header>
     <main> 
-      <section class="input"> <span class="input__square"></span><span class="input__square"></span>
-        <h2 class="input__ttl">募集用フォーム</h2><span class="input__square"></span><span class="input__square"></span>
+      <section class="input"> 
+        <h2>募集をする</h2>
+      </section>
+      <section class="form"> 
+        <form>   <img src="" alt="サムネイル選択">
+          <div class="form__content">
+            <label for="title">タイトル</label>
+            <input type="text">
+          </div>
+          <div class="form__content">
+            <label for="mode">対戦モード</label>
+            <select class="mode__select" name="mode"> 
+              <option value="">対戦モードを選択する</option>
+              <option value="asari">ガチアサリ</option>
+              <option value="area">ガチエリア</option>
+              <option value="yagura">ガチヤグラ</option>
+              <option value="hoko">ガチホコ</option>
+            </select>
+          </div>
+          <div class="form__content"> 
+            <label for="time"> </label>
+            <input type="text">
+          </div>
+          <div class="form__content"> 
+            <label for="xp">xp </label>
+            <input type="text">
+          </div>
+          <div class="form__content"> 
+            <label for="other">その他</label>
+            <input type="textarea">
+          </div>
+          <button>募集を投稿する</button>
+        </form>
       </section>
       <section class="form"> </section>
     </main>

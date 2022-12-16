@@ -13,12 +13,32 @@ html(lang="ja")
             //- include _header
         main 
             section.input 
-                span.input__square
-                span.input__square
-                h2.input__ttl 募集用フォーム
-                span.input__square
-                span.input__square
-            
+                h2 募集をする
+            section.form 
+                form    
+                    img(src="", alt="サムネイル選択")
+                    .form__content
+                        label(for="title") タイトル
+                        input(type="text" )
+                    .form__content
+                        label(for="mode") 対戦モード
+                        select(name="mode" class="mode__select") 
+                            option(value="") 対戦モードを選択する
+                            option(value="asari") ガチアサリ
+                            option(value="area") ガチエリア
+                            option(value="yagura") ガチヤグラ
+                            option(value="hoko") ガチホコ
+                    .form__content 
+                        label(for="time") 
+                        input(type="text")
+                    .form__content 
+                        label(for="xp") xp 
+                        input(type="text")
+                    .form__content 
+                        label(for="other") その他
+                        input(type="textarea")  
+                    button 募集を投稿する
+
             section.form 
                 
 
