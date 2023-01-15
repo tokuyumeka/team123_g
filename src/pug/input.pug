@@ -12,7 +12,13 @@ html(lang="ja")
         include _header
         main 
             section.input 
-                h2 募集をする
+                h2 募集用フォーム
+            section.caution
+                h3 注意
+                ul 
+                    li 個人情報は書き込まないようにお願いいたします
+                    li 個人に対する誹謗中傷を含む内容はお控えください
+                    li 募集以外の書き込みは控えてください
             section.form 
                 form 
                     .form__thum
@@ -40,7 +46,7 @@ html(lang="ja")
                         input(type="text" placeholder="自チームの平均xpを入力")
                     .form__item
                         label(for="other") その他
-                        input(type="textarea"  placeholder="他に書きたいことがあれば記入")  
+                        textarea(name="" cols="30" rows="10" wrap="hard" ) 
                     button 募集を投稿する
 
                 
