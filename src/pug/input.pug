@@ -9,15 +9,16 @@ html(lang="ja")
 
         title input
     body 
-        header 
-            //- include _header
+        include _header
         main 
             section.input 
                 h2 募集をする
             section.form 
                 form 
                     .form__thum
-                        img(src="", alt="サムネイル選択")
+                        .form__thum-item
+                            img(src="img/icon_plus.svg", alt="サムネイル選択")
+                            p サムネイルを追加する
                     .form__item
                         label(for="title") タイトル
                         input(type="text" placeholder="ここにタイトルを入力")
@@ -40,9 +41,5 @@ html(lang="ja")
                         input(type="textarea" placeholder="他に書きたいことがあれば記入")  
                     button 募集を投稿する
 
-            section.form 
                 
 
-        footer 
-            //- include _footer
-        
