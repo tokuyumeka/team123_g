@@ -1,0 +1,48 @@
+doctype html
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/ress.css")
+        link(rel="stylesheet", href="css/new.css")
+
+        title input
+    body 
+        header 
+            //- include _header
+        main 
+            section.input 
+                h2 募集をする
+            section.form 
+                form 
+                    .form__thum
+                        img(src="", alt="サムネイル選択")
+                    .form__item
+                        label(for="title") タイトル
+                        input(type="text" placeholder="ここにタイトルを入力")
+                    .form__item
+                        label(for="mode") 対戦モード
+                        select(name="mode" class="mode__select") 
+                            option(value="") 対戦モードを選択する
+                            option(value="asari") ガチアサリ
+                            option(value="area") ガチエリア
+                            option(value="yagura") ガチヤグラ
+                            option(value="hoko") ガチホコ
+                    .form__item
+                        label(for="time") 
+                        input(type="text" placeholder="開始予定時刻を入力")
+                    .form__item
+                        label(for="xp") xp 
+                        input(type="text" placeholder="自チームの平均xpを入力")
+                    .form__item
+                        label(for="other") その他
+                        input(type="textarea" placeholder="他に書きたいことがあれば記入")  
+                    button 募集を投稿する
+
+            section.form 
+                
+
+        footer 
+            //- include _footer
+        

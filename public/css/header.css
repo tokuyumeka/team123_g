@@ -1,0 +1,27 @@
+body {
+  font-size: 62.5%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border-radius: 64px;
+  background-color: tomato;
+  padding: 0 64px;
+}
+header h2 {
+  display: flex;
+  font-size: 1.6em;
+  font-weight: unset;
+}
+header nav {
+  font-size: 1.4em;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style-type: none;
+}
