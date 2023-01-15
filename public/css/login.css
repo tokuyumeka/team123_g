@@ -1,0 +1,126 @@
+body {
+  font-size: 62.5%;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+main {
+  border: solid #C9C9C9 1px;
+  border-radius: 24px;
+  padding-top: 110px;
+  padding-bottom: 64px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 86px;
+}
+
+.new {
+  margin-left: 4vW;
+}
+.new__item {
+  color: #858585;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.new__item label {
+  padding: 12px 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+}
+.new__item input {
+  border: solid #D7D7D7 1px;
+  height: 74px;
+  padding-left: 24px;
+  width: 840px;
+  font-size: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.new__help {
+  display: block;
+  width: 868px;
+  margin-top: 24px;
+}
+.new__help a {
+  text-decoration: none;
+}
+.new__help a p {
+  text-align: right;
+  color: #1DA1F2;
+  font-size: 18px;
+}
+.new button {
+  display: block;
+  width: 204px;
+  height: 62px;
+  background-color: #2ACCC8;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 88px;
+  margin-bottom: 65px;
+}
+.new a {
+  text-decoration: none;
+  margin-bottom: 80ox;
+}
+.new a button:hover {
+  background-color: #FB6D10;
+}
+
+.login {
+  width: 856px;
+  margin: 0 auto;
+}
+.login__ttl {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  margin-bottom: 45px;
+}
+.login__ttl-line {
+  position: absolute;
+  width: 856px;
+  height: 1px;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+.login__ttl h3 {
+  position: absolute;
+  display: block;
+  width: 140px;
+  height: 30px;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: 100;
+  text-align: center;
+  line-height: 30px;
+}
+.login a {
+  text-decoration: none;
+  width: 856px;
+  color: #000;
+}
+.login a p {
+  border: solid #D7D7D7 1px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 4.5em;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 16px;
+}

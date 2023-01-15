@@ -9,40 +9,33 @@ html(lang="ja")
 
         title login
     body 
-        header 
-            //- include _header
+        include _header
         main 
-            section.input 
-                h2 募集をする
-            section.form 
+            section.new
                 form 
-                    .form__thum
-                        img(src="", alt="サムネイル選択")
-                    .form__item
-                        label(for="title") タイトル
-                        input(type="text" placeholder="ここにタイトルを入力")
-                    .form__item
-                        label(for="mode") 対戦モード
-                        select(name="mode" class="mode__select") 
-                            option(value="") 対戦モードを選択する
-                            option(value="asari") ガチアサリ
-                            option(value="area") ガチエリア
-                            option(value="yagura") ガチヤグラ
-                            option(value="hoko") ガチホコ
-                    .form__item
-                        label(for="time") 
-                        input(type="text" placeholder="開始予定時刻を入力")
-                    .form__item
-                        label(for="xp") xp 
-                        input(type="text" placeholder="自チームの平均xpを入力")
-                    .form__item
-                        label(for="other") その他
-                        input(type="textarea" placeholder="他に書きたいことがあれば記入")  
-                    button 募集を投稿する
+                    .new__item
+                        label(for="title") ID
+                        input(type="text" placeholder="ログインIDまたはパスワードを入力してください")
+                    .new__item
+                        label(for="title") パスワード
+                        input(type="text" placeholder="パスワードを入力してください")
+                    .new__help
+                        a(href="#")
+                            p パスワードを忘れた場合はこちら
+                    button ログイン
 
-            section.form 
+            section.login 
+                .login__ttl
+                    .login__ttl-line 
+                    h3 または
+                a(href="#").login__btn 
+                    p Googleでログイン
+                a(href="#").login__btn 
+                    p Yahooでログイン
+                a(href="#").login__btn 
+                    p Facebookでログイン
+
                 
 
-        footer 
-            //- include _footer
+
         

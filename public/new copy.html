@@ -6,48 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/new.css">
-    <title>input</title>
+    <title>new</title>
   </head>
-  <body> 
-    <header> </header>
+  <body> <!DOCTYPE html>
+    <html lang="ja">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/ress.css">
+        <link rel="stylesheet" href="css/header.css">
+        <title>header </title>
+      </head>
+      <body> 
+        <header> 
+          <h2> <img src="" alt="">
+            <p>〜簡単に対戦相手や大会を探せる〜</p>
+          </h2>
+          <nav> 
+            <ul> 
+              <li>募集相手を探す</li>
+              <li>募集中の大会を探す</li>
+              <li>相手を募集する</li>
+              <li>アカウント作成/ログイン</li>
+            </ul>
+          </nav>
+        </header>
+      </body>
+    </html>
     <main> 
-      <section class="input"> 
-        <h2>募集をする</h2>
-      </section>
-      <section class="form"> 
+      <section class="new">
         <form> 
-          <div class="form__thum"><img src="" alt="サムネイル選択"></div>
-          <div class="form__item">
-            <label for="title">タイトル</label>
-            <input type="text" placeholder="ここにタイトルを入力">
+          <div class="new__item">
+            <label for="title">プレイヤー名</label>
+            <input type="text" placeholder="プレイヤー名を入力してください">
+            <ul> 
+              <li>16文字以内で入力してください</li>
+              <li>住所、電話番号などの個人情報は入力しないでください</li>
+              <li>他のユーザーが不快になる可能性のあるプレイヤー名は入力しないでください</li>
+            </ul>
           </div>
-          <div class="form__item">
-            <label for="mode">対戦モード</label>
-            <select class="mode__select" name="mode"> 
-              <option value="">対戦モードを選択する</option>
-              <option value="asari">ガチアサリ</option>
-              <option value="area">ガチエリア</option>
-              <option value="yagura">ガチヤグラ</option>
-              <option value="hoko">ガチホコ</option>
-            </select>
+          <div class="new__item">
+            <label for="title">ID</label>
+            <input type="text" placeholder="IDを入力してください">
+            <ul> 
+              <li>大文字、小文字、英文字を含めた８〜１６文字で入力してください</li>
+              <li>英文字以外の記号は入力できません</li>
+            </ul>
           </div>
-          <div class="form__item">
-            <label for="time"> </label>
-            <input type="text" placeholder="開始予定時刻を入力">
-          </div>
-          <div class="form__item">
-            <label for="xp">xp </label>
-            <input type="text" placeholder="自チームの平均xpを入力">
-          </div>
-          <div class="form__item">
-            <label for="other">その他</label>
-            <input type="textarea" placeholder="他に書きたいことがあれば記入">
-          </div>
-          <button>募集を投稿する</button>
+          <div class="new__item">
+            <label for="title">パスワード</label>
+            <input type="text" placeholder="パスワードを入力してください">
+          </div><a href="#"> 
+            <button>ログイン</button></a>
         </form>
       </section>
-      <section class="form"> </section>
+      <section class="login"> 
+        <div class="login__ttl">
+          <div class="login__ttl-line"> </div>
+          <h3>または</h3>
+        </div><a class="login__btn" href="#"> 
+          <p>Googleでログイン</p></a><a class="login__btn" href="#"> 
+          <p>Yahooでログイン</p></a><a class="login__btn" href="#"> 
+          <p>Facebookでログイン</p></a>
+      </section>
     </main>
-    <footer> </footer>
   </body>
 </html>

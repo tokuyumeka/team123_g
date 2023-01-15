@@ -7,42 +7,43 @@ html(lang="ja")
         link(rel="stylesheet", href="css/ress.css")
         link(rel="stylesheet", href="css/new.css")
 
-        title input
+        title new
     body 
-        header 
-            //- include _header
+        include _header
         main 
-            section.input 
-                h2 募集をする
-            section.form 
+            section.new
                 form 
-                    .form__thum
-                        img(src="", alt="サムネイル選択")
-                    .form__item
-                        label(for="title") タイトル
-                        input(type="text" placeholder="ここにタイトルを入力")
-                    .form__item
-                        label(for="mode") 対戦モード
-                        select(name="mode" class="mode__select") 
-                            option(value="") 対戦モードを選択する
-                            option(value="asari") ガチアサリ
-                            option(value="area") ガチエリア
-                            option(value="yagura") ガチヤグラ
-                            option(value="hoko") ガチホコ
-                    .form__item
-                        label(for="time") 
-                        input(type="text" placeholder="開始予定時刻を入力")
-                    .form__item
-                        label(for="xp") xp 
-                        input(type="text" placeholder="自チームの平均xpを入力")
-                    .form__item
-                        label(for="other") その他
-                        input(type="textarea" placeholder="他に書きたいことがあれば記入")  
-                    button 募集を投稿する
+                    .new__item
+                        label(for="title") プレイヤー名
+                        input(type="text" placeholder="プレイヤー名を入力してください")
+                        ul 
+                            li 16文字以内で入力してください
+                            li 住所、電話番号などの個人情報は入力しないでください
+                            li 他のユーザーが不快になる可能性のあるプレイヤー名は入力しないでください
+                    .new__item
+                        label(for="title") ID
+                        input(type="text" placeholder="IDを入力してください")
+                        ul 
+                            li 大文字、小文字、英文字を含めた８〜１６文字で入力してください
+                            li 英文字以外の記号は入力できません
+                    .new__item
+                        label(for="title") パスワード
+                        input(type="text" placeholder="パスワードを入力してください")
+                    a(href="#") 
+                        button ログイン
 
-            section.form 
+            section.login 
+                .login__ttl
+                    .login__ttl-line 
+                    h3 または
+                a(href="#").login__btn 
+                    p Googleでログイン
+                a(href="#").login__btn 
+                    p Yahooでログイン
+                a(href="#").login__btn 
+                    p Facebookでログイン
+
                 
 
-        footer 
-            //- include _footer
+
         
